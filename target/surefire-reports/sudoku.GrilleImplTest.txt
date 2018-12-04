@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: sudoku.GrilleImplTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 5, Skipped: 0, Time elapsed: 0.238 s <<< FAILURE! - in sudoku.GrilleImplTest
+testGetValue(sudoku.GrilleImplTest)  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.NullPointerException
+	at sudoku.GrilleImplTest.testGetValue(GrilleImplTest.java:77)
+
+testMain(sudoku.GrilleImplTest)  Time elapsed: 0.19 s  <<< FAILURE!
+java.lang.AssertionError: The test case is a prototype.
+	at sudoku.GrilleImplTest.testMain(GrilleImplTest.java:35)
+
+testGetDimension(sudoku.GrilleImplTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at sudoku.GrilleImplTest.testGetDimension(GrilleImplTest.java:46)
+
+testComplete(sudoku.GrilleImplTest)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException
+	at sudoku.GrilleImplTest.testComplete(GrilleImplTest.java:91)
+
+testPossible(sudoku.GrilleImplTest)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException
+	at sudoku.GrilleImplTest.testPossible(GrilleImplTest.java:109)
+
+testSetValue(sudoku.GrilleImplTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at sudoku.GrilleImplTest.testSetValue(GrilleImplTest.java:62)
+
