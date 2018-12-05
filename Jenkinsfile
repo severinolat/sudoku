@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Checkstyle') {
       steps {
-        checkstyle(canComputeNew: true, canResolveRelativePaths: true, canRunOnFailed: true)
+        checkstyle(canComputeNew: true)
       }
     }
   }
