@@ -1,9 +1,10 @@
 pipeline {
   agent none
   stages {
-    stage('') {
+    stage('error') {
       steps {
         build 'sudoku'
+        checkstyle(canComputeNew: true, canResolveRelativePaths: true, canRunOnFailed: true)
       }
     }
   }
