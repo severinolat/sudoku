@@ -11,5 +11,10 @@ pipeline {
         publishCoverage(failNoReports: true)
       }
     }
+    stage('cobertura') {
+      steps {
+        cobertura()
+      }
+    }
   }
 }
