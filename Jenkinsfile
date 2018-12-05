@@ -1,7 +1,7 @@
 pipeline {
-  agent none
+  agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
         checkstyle(canComputeNew: true, canResolveRelativePaths: true, canRunOnFailed: true)
       }
