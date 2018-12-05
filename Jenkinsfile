@@ -6,5 +6,10 @@ pipeline {
         checkstyle(canComputeNew: true)
       }
     }
+    stage('report') {
+      steps {
+        publishCoverage(failNoReports: true)
+      }
+    }
   }
 }
