@@ -6,10 +6,5 @@ pipeline {
         checkstyle(canComputeNew: true)
       }
     }
-    stage('cobertura') {
-      steps {
-        cobertura(autoUpdateHealth: true)
-      }
-    }
   }
 }
