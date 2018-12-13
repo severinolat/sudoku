@@ -11,5 +11,10 @@ pipeline {
         findbugs(canComputeNew: true)
       }
     }
+    stage('cobertura') {
+      steps {
+        cobertura(autoUpdateStability: true, autoUpdateHealth: true)
+      }
+    }
   }
 }
