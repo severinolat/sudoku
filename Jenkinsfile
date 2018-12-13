@@ -11,5 +11,10 @@ pipeline {
         findbugs(canComputeNew: true)
       }
     }
+    stage('cobertura') {
+      steps {
+        cobertura(autoUpdateHealth: true, packageCoverageTargets: 'ASCII')
+      }
+    }
   }
 }
