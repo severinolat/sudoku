@@ -11,10 +11,5 @@ pipeline {
         findbugs(canComputeNew: true)
       }
     }
-    stage('cobertura') {
-      steps {
-        jacoco(buildOverBuild: true)
-      }
-    }
   }
 }
