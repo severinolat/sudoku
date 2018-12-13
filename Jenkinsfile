@@ -13,7 +13,7 @@ pipeline {
     }
     stage('cobertura') {
       steps {
-        cobertura(autoUpdateHealth: true, packageCoverageTargets: 'ASCII')
+        jacoco(buildOverBuild: true)
       }
     }
   }
