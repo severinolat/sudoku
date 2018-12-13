@@ -6,5 +6,10 @@ pipeline {
         checkstyle(canComputeNew: true)
       }
     }
+    stage('findbugs') {
+      steps {
+        findbugs(canComputeNew: true)
+      }
+    }
   }
 }
