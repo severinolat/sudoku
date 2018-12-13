@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sudoku;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -11,14 +10,15 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import sudoku.GrilleImpl;
 
 /**
  *
- * @author Severin LAWSON
+ * @author Séverin LAWSON
  */
 public class GrilleImplTest {
     
-        public GrilleImplTest() {
+       public GrilleImplTest() {
     }
     
     
@@ -175,10 +175,9 @@ public class GrilleImplTest {
         char value = ' ';
       
         boolean expResult = false;
-        boolean result = instance.possible(x, y, value);
+        boolean result = instance.POSSIBLEc(x, y, value);
         assertEquals(expResult, result);
         
     }
 
-    
 }
